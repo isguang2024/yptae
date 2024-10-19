@@ -6,11 +6,11 @@
     <title>Redirect Page</title>
     <script>
         const params = new URLSearchParams(window.location.search);
-        const url = params.get('url');
-        if (url) {
-            window.location.href = url;
+        const id = params.get('id');
+        if (id) {
+            window.location.href = `https://www.aliexpress.com/item/${id}.html`;
         } else {
-            document.write('No URL provided.');
+            document.write('No ID provided.');
         }
     </script>
 </head>
